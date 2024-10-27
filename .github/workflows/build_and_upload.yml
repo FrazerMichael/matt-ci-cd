@@ -22,7 +22,7 @@ jobs:
         pip install wheel setuptools
 
     - name: Build wheel
-      run: python bdist_wheel
+      run: python setup.py bdist_wheel
 
     - name: Upload to S3
       env:
